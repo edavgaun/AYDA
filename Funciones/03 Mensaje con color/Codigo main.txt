@@ -1,0 +1,14 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\n*******************************************************");
+
+            Bienvenida("Edgar", "Blue", "Red");
+            Bienvenida("Carolina", "Magenta", "Cyan");
+            Bienvenida("Max", "Green", "Yellow");
+
+            Console.WriteLine("\n*******************************************************");
+
+        }
+    }

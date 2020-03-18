@@ -1,0 +1,16 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        int numero;
+
+        Console.WriteLine("Dame un número entero de varias cifras: ");
+        numero = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("La cantidad de cifras del número ingresado es: ");
+        Console.WriteLine(cifras(numero));
+ 
+        Console.WriteLine("El número de atras hacia adelante es: ");
+        Console.WriteLine(invertir(numero));
+    }
+}

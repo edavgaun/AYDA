@@ -1,0 +1,25 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            string texto="Hola Mundo!!!";
+
+            Console.WriteLine(texto);
+
+            //Convierte la variable string a minúsculas
+            Console.WriteLine(texto.ToLower());
+            
+            //Convierte la variable string a MAYÚSCULAS
+            Console.WriteLine(texto.ToUpper());
+            
+            //Obtiene una sección del string original
+            Console.WriteLine(texto.Substring(0, 4));
+            Console.WriteLine(texto.Substring(5));
+            Console.WriteLine(texto.Substring(5,5));
+            Console.WriteLine(texto.Substring(5, 6));
+            
+            //Obtiene un caracter del string original
+            Console.WriteLine(texto.Substring(0, 1));
+            Console.WriteLine(texto.Substring(5, 1));
+        }
+    }
