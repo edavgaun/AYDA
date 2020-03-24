@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+# Librería que nos permitirá abrir archivos txt 
+using System.IO;
+
+namespace practica3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string texto = File.ReadAllText(@"C:\Users\Ruta de la carpeta donde guardaron el archivo\Discurso_AMLO_2019.txt");
+
+            // Muestra el contenido del archivo en la consola. La variable texto es un string.
+
+            Console.WriteLine(texto);
+
+            File.WriteAllText(@"C:\Users\Ruta de la carpeta donde guardaron el archivo\WriteLines.txt", texto);
+        }
+
+    }
+}
