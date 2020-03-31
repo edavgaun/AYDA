@@ -1,0 +1,38 @@
+static void Main(string[] args)
+        {
+            //Crearemos un archivo txt con formato de tabla con los caracteres ASCII del idioma ingles
+
+            string texto_total = "";
+            string texto_fila = "";
+            string margen =  "╔═══════════════════════════════════════════════════════════════╗\n";
+            string margen2 = "╠═══════════════════════════════════════════════════════════════╣\n";
+            string margen3 = "╚═══════════════════════════════════════════════════════════════╝\n";
+            string path = @"C:\Users\eaval\Documents\";
+
+            // Valores ASCII del 32 al 126
+            texto_total = "TABLA ASCII CARACTERES IMPRIMIBLES\n\n";
+            for (int i = 32; i <= 126; i++)
+            {
+                if (i == 32)
+                {
+                    texto_total = texto_total + margen;
+                }
+                else
+                {
+                    texto_total = texto_total + margen2;
+                }
+                texto_fila = "║El caracter ASCII número\t" + i + "\tcorresponde a:\t" + (char)i + "\t║\n";
+                Console.WriteLine(texto_fila);
+                texto_total = texto_total + texto_fila;
+            }
+            texto_total = texto_total + margen3;
+            texto_total = texto_total + "\n\n\t\t\t\t\tAutor: Edgar Avalos Gauna";
+
+            File.WriteAllText(path + "prueba.txt", texto_total);
+
+            string a= Saludo("Joassef");
+            Console.WriteLine(a);
+            Console.WriteLine(Saludo("Edgar"));
+
+
+        }
